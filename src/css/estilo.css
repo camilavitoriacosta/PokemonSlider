@@ -1,12 +1,14 @@
-body{
+body {
     font-family: 'Outfit', sans-serif;
 
     background-image: url(../imagens/fundo-site.png);
     background-repeat: no-repeat;
     background-size: cover;
+
+    min-height: 100vh;
 }
 
-.cabecalho{
+.cabecalho {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,11 +16,43 @@ body{
     padding-top: 50px;
 }
 
-.cabecalho .titulo{
+.cabecalho .titulo {
     color: #f1ecff;
 }
 
-.cabecalho .pokebola{
+.cabecalho .pokebola {
     width: 25px;
     height: 25px;
+}
+
+.pokemon-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 60px 0;
+}
+
+.btn-seta {
+    background-color: #f1ecff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-seta:hover {
+    background-color: rgb(204, 127, 255);
+}
+
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg);
+}
+
+.lista-pokemons {
+    width: 310px;
+    height: 520px;
 }
